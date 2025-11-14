@@ -1,0 +1,96 @@
+.hero {
+  padding-top: 200px;
+  position: relative;
+
+  &::after {
+    background: url("/assets/hero-bg.png") no-repeat center center;
+    background-size: 100% 100% ;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 189px;
+  }
+
+  &__text-box {
+    max-width: 496px;
+  }
+
+  &__play {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    img {
+      aspect-ratio: 84/84;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  &__title {
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+  }
+
+  &__buttons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__stats {
+  }
+
+  .stats-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+
+      .extra-bold {
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+        letter-spacing: 0%;
+      }
+    }
+
+    .divider {
+        width: 8px;
+        height: 8px;
+        background: var(--color-primary);
+        border-radius: 50%;
+
+    }
+  }
+}
