@@ -9,7 +9,7 @@
   height: 92px;
 
   &.solid-background {
-    background: linear-gradient(55.95deg, #ff3f3a12 0%, #f75e051a 100%);
+    background: linear-gradient(55.95deg, rgb(255 255 255) 0%, rgb(255 183 140) 100%);
      transition: all ease-in-out 0.24s;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   }

@@ -1,0 +1,30 @@
+.check-list {
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: 0;
+      color: #424551;
+    }
+
+
+  }
+
+}
+
+
+   :host(.about-section__check-list) .check-list {
+     margin-bottom: 48px;
+   }

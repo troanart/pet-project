@@ -100,54 +100,6 @@ letter-spacing: 0%;
     padding: 0 15px;
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 40px;
-    line-height: 52px;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    background: var(--btn-primary);
-    color: var(--color-white);
-    transition: transform 0.24s ease-in-out;
-}
-
-.btn:hover,
-.btn:focus {
-    transform: scale(0.95);
-}
-
-.btn-outline {
-    background: transparent;
-    font-family: Lato;
-font-weight: 700;
-font-size: 16px;
-line-height: 52px;
-letter-spacing: 0.5px;
- padding: 0 40px;
- color:  #FF3F3A;
- border-radius: 4px;
- border: 1px solid #FF3F3A;
- transition: all ease-in-out 0.24s;
- &:hover,
- &:focus {
-    background: #FF3F3A;
-    color: var(--color-white);
- }
-
-
- 
-
-    
-
-
-}
 
 /* ==========================================================================
    Links

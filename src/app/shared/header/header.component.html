@@ -5,26 +5,17 @@
       <img src="assets/logo.svg" alt="logo" class="header__logo-img" />
     </a>
     <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-list__item">
-          <a routerLink="/about-us" class="nav-list__link" aria-label="About Us"> About Us </a> 
+      <ul class="nav-list" >
+        <li class="nav-list__item" *ngFor="let item of navigationItems">
+          <a [routerLink]="item.routerLink" class="nav-list__link" [attr.aria-label]="item.label"> {{ item.label }} </a> 
         </li>
-        <li class="nav-list__item">
-          <a routerLink="/courses" class="nav-list__link" aria-label="Courses"> Courses </a> 
-        </li>
-        <li class="nav-list__item">
-          <a routerLink="/events" class="nav-list__link" aria-label="Events"> Events </a> 
-        </li>
-        <li class="nav-list__item">
-          <a routerLink="/blog" class="nav-list__link" aria-label="Blog"> Blog </a> 
-        </li>
-        <li class="nav-list__item">
-          <a routerLink="/contacts" class="nav-list__link" aria-label="Contacts"> Contacts </a> 
-        </li>
+       
       </ul>
     </nav>
     <div class="header__box">
-      <a routerLink="/contact-us" class="header__btn btn" aria-label="Get consultation"> Get consultation</a> 
+       
+
+      <app-button-component [routerLink]="buttonRouterLink" [text]="buttonText" [variant]="'primary'"></app-button-component>
       <a routerLink="/login" class="header__set-up" aria-label="Log in / Register"> 
         <svg
           width="20"

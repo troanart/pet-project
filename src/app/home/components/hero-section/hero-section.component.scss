@@ -1,5 +1,6 @@
 .hero {
   padding-top: 200px;
+  padding-bottom: 80px;
   position: relative;
 
   &::after {
@@ -70,6 +71,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+   
 
     &__item {
       display: flex;

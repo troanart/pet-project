@@ -16,8 +16,8 @@
         </div>
         <h1 class="hero__title">Enjoy studying with Createx Online Courses</h1>
         <div class="hero__buttons">
-            <a routerLink="/about-us" class="btn-outline">About us</a>
-            <a routerLink="/courses" class="btn">Explore courses</a>
+            <app-button-component [routerLink]="aboutButtonRouterLink" [text]="aboutButtonText" [variant]="'outline'"></app-button-component>
+          <app-button-component [routerLink]="coursesButtonRouterLink" [text]="coursesButtonText" [variant]="'primary'"></app-button-component>
         </div>
       </div>
       <div class="hero__img-box">

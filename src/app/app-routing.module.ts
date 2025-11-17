@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NavigationItem } from './shared/models/navigation-item.interface';
 
-const routes: Routes = [
+const routes: Routes =  [
   {
     path: '',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
