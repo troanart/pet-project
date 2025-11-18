@@ -1,0 +1,14 @@
+<section class="courses-section">
+    <div class="courses-section__container container">
+        <h6>
+            Ready to learn?
+        </h6>
+       <div class="courses-section__title">
+         <h2>
+            Featured Courses
+        </h2>
+        <app-button-component [routerLink]="coursesButtonRouterLink" [text]="coursesButtonText" [variant]="'primary'"></app-button-component>
+       </div>
+       <app-courses-list [courses]="courses" [columns]="2"  [quantityCards]="6"></app-courses-list>
+    </div>
+</section>

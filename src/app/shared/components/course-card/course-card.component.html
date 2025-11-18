@@ -1,0 +1,25 @@
+<li class="course-list__item">
+    
+    <a [routerLink]="courseCard.routerLink" class="course-list__link">
+
+        <img [src]="courseCard.image" [alt]="courseCard.title" />
+        <div class="course-list__content">
+            <span class="course-list__item-category">
+                {{ courseCard.category }}
+            </span>
+            <h3>
+                {{ courseCard.title }}
+            </h3>
+            <div class="course-list__box">
+                <span class="course-list__price">
+
+                    ${{ courseCard.price }}
+                </span>
+                |
+                <p>
+                  by  {{ courseCard.author }}
+                </p>
+            </div>
+        </div>
+        </a>
+    </li>
