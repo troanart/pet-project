@@ -4,7 +4,10 @@
 
         <img [src]="courseCard.image" [alt]="courseCard.title" />
         <div class="course-list__content">
-            <span class="course-list__item-category">
+            <span
+                class="course-list__item-category"
+                [ngStyle]="{'background': courseCard.badgeColor}"
+            >
                 {{ courseCard.category }}
             </span>
             <h3>
