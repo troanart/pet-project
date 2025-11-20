@@ -25,41 +25,20 @@
       </div>
     </div>
       <ul class="hero__stats stats-list">
-        <li class="stats-list__item">
+        <ng-container *ngFor=" let item of statsList">
+          <li class="stats-list__item">
             <span class="extra-bold">
-                1200
+               {{item.counter}}
             </span>
             <p>
-                Students graduated
+                {{item.title}}
             </p>
         </li>
         <li class="divider"></li>
-        <li class="stats-list__item">
-            <span class="extra-bold">
-                84
-            </span>
-            <p>
-                Completed courses
-            </p>
-        </li>
-        <li class="divider"></li>
-        <li class="stats-list__item">
-            <span class="extra-bold">
-                16
-            </span>
-            <p>
-                Qualified tutors
-            </p>
-        </li>
-        <li class="divider"></li>
-        <li class="stats-list__item">
-            <span class="extra-bold">
-              5
-            </span>
-            <p>
-                Years of experience
-            </p>
-        </li>
+        </ng-container>
+        
+      
       </ul>
+
   </div>
 </section>
