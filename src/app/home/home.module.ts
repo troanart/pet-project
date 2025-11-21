@@ -7,6 +7,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { SharedModule } from '../shared/shared.module';
 import { CoursesSectionComponent } from './components/courses-section/courses-section.component';
+import { BenefitsSectionComponent } from './components/benefits-section/benefits-section.component';
 
 
 
@@ -16,6 +17,7 @@ import { CoursesSectionComponent } from './components/courses-section/courses-se
     HeroSectionComponent,
     AboutSectionComponent,
     CoursesSectionComponent,
+    BenefitsSectionComponent,
   ],
   imports: [
     CommonModule,
