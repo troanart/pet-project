@@ -8,17 +8,37 @@
                 That’s how we do it
             </h2>
         </div>
-        <div class="benefits-inner">
+        <div class="benefits-section__inner">
             <ul class="benefits-list">
-                
-                    <li class="benefits-list__item" *ngFor="let item of benefitsList">
-                        <div [innerHTML]="item.icon"></div>
-                        <p>
-                            {{item.text}}
-                        </p>
-                    </li>
-               
+                <li 
+                    class="benefits-list__item" 
+                    *ngFor="let item of benefitsList; let i = index" 
+                    (click)="setActive(i)" 
+                    [class.active]="activeIndex === i"
+                >
+                    <div class="benefits-list__icon" [innerHTML]="sanitizeHtml(item.icon)"></div>
+                    <p>
+                        {{item.text}}
+                    </p>
+                </li>
             </ul>
+            <div class="benefits-section__info-box">
+                <div class="benefits-section__text-box" *ngIf="benefitsContent[activeIndex]">
+                    <h3>
+                        {{benefitsContent[activeIndex].title}}
+                    </h3>
+                    <p>
+                        {{benefitsContent[activeIndex].text}}
+                    </p>
+                </div>
+                <img 
+                    *ngIf="benefitsContent[activeIndex]"
+                    [src]="benefitsContent[activeIndex].img_src" 
+                    width="500" 
+                    height="440" 
+                    [alt]="benefitsContent[activeIndex].img_alt"
+                >
+            </div>
         </div>
     </div>
 </section>
