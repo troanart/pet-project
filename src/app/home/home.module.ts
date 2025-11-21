@@ -8,6 +8,7 @@ import { AboutSectionComponent } from './components/about-section/about-section.
 import { SharedModule } from '../shared/shared.module';
 import { CoursesSectionComponent } from './components/courses-section/courses-section.component';
 import { BenefitsSectionComponent } from './components/benefits-section/benefits-section.component';
+import { EventsSectionComponent } from './components/events-section/events-section.component';
 
 
 
@@ -18,6 +19,7 @@ import { BenefitsSectionComponent } from './components/benefits-section/benefits
     AboutSectionComponent,
     CoursesSectionComponent,
     BenefitsSectionComponent,
+    EventsSectionComponent,
   ],
   imports: [
     CommonModule,
