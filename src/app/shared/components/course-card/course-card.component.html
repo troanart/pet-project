@@ -1,6 +1,6 @@
 <li class="course-list__item">
     
-    <a [routerLink]="courseCard.routerLink" class="course-list__link">
+    <a [routerLink]="['/courses', courseCard.routerLink]" class="course-list__link">
 
         <img [src]="courseCard.image" [alt]="courseCard.title" />
         <div class="course-list__content">

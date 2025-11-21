@@ -18,7 +18,7 @@ export class CoursesService {
         image: 'assets/courses/1.png',
         price: 100,
         author: 'Jerome Bell',
-        routerLink: '/courses/the-ultimate-google-ads-training-course',
+        routerLink: 'the-ultimate-google-ads-training-course',
       },
       {
         id: 2,
@@ -28,7 +28,7 @@ export class CoursesService {
         image: 'assets/courses/2.png',
         price: 480,
         author: 'Marvin McKinney',
-        routerLink: '/courses/product-management-fundamentals',
+        routerLink: 'product-management-fundamentals',
       },
       {
         id: 3,
@@ -38,7 +38,7 @@ export class CoursesService {
         image: 'assets/courses/3.png',
         price: 200,
         author: 'Leslie Alexander Li',
-        routerLink: '/courses/hr-management-and-analytics',
+        routerLink: 'hr-management-and-analytics',
       },
       {
         id: 4,
@@ -48,7 +48,7 @@ export class CoursesService {
         image: 'assets/courses/4.png',
         price: 530,
         author: 'Kristin Watson',
-        routerLink: '/courses/brand-management-pr-communications',
+        routerLink: 'brand-management-pr-communications',
       },
       {
         id: 5,
@@ -58,7 +58,7 @@ export class CoursesService {
         image: 'assets/courses/5.png',
         price: 500,
         author: 'Guy Hawkins',
-        routerLink: '/courses/graphic-design-basic',
+        routerLink: 'graphic-design-basic',
       },
       {
         id: 6,
@@ -68,7 +68,7 @@ export class CoursesService {
         image: 'assets/courses/6.png',
         price: 400,
         author: 'Dianne Russell',
-        routerLink: '/courses/business-development-management',
+        routerLink: 'business-development-management',
       },
       {
         id: 7,
@@ -78,7 +78,7 @@ export class CoursesService {
         image: 'assets/courses/7.png',
         price: 600,
         author: 'Brooklyn Simmons',
-        routerLink: '/courses/highload-software-architecture',
+        routerLink: 'highload-software-architecture',
       },
       {
         id: 8,
@@ -88,7 +88,7 @@ export class CoursesService {
         image: 'assets/courses/8.png',
         price: 150,
         author: 'Kathryn Murphy',
-        routerLink: '/courses/human-resources-selection-and-recruitment',
+        routerLink: 'human-resources-selection-and-recruitment',
       },
       {
         id: 9,
@@ -98,8 +98,13 @@ export class CoursesService {
         image: 'assets/courses/9.png',
         price: 240,
         author: 'Cody Fisher',
-        routerLink: '/courses/user-experience-human-centered-design',
+        routerLink: 'user-experience-human-centered-design',
       },
     ];
+  }
+
+  getCourseBySlug(slug: string): CourseCard | undefined  {
+  
+    return this.getCourses().find((course) => slug === course.routerLink);;
   }
 }

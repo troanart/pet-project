@@ -7,10 +7,12 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SharedModule } from './shared/shared.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    
     
   ],
   imports: [
