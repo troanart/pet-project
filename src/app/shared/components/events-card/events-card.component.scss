@@ -1,0 +1,84 @@
+.events-list {
+  &__item {
+    background: #fff;
+    border-radius: 4px;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 24px;
+
+   
+  }
+
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .date {
+      font-weight: 900;
+      font-size: 48px;
+      color: #ff3f3a;
+      line-height: 1.3;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__box {
+    h5 {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 4px;
+      line-height: 1.4;
+      letter-spacing: 0%;
+      color: #1e212c;
+    }
+
+    p {
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+
+      line-height: 1.6;
+      letter-spacing: 0%;
+      color: #787a80;
+    }
+  }
+
+  &__mounth {
+  }
+
+  &__time {
+  }
+
+  &__info {
+    margin-right: auto;
+    h5 {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 4px;
+      line-height: 1.4;
+      letter-spacing: 0%;
+      color: #1e212c;
+    }
+
+    p {
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 16px;
+
+      line-height: 1.6;
+      letter-spacing: 0%;
+      color: #787a80;
+    }
+  }
+}
+
+
+
+

@@ -39,4 +39,8 @@ width: fit-content;
   }
 }
 
+:host-context(.events-section) .btn-outline {
+  padding: 0 32px;
+}
+
 

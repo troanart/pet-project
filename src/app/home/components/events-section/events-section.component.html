@@ -4,33 +4,13 @@
       <h6>Our Events</h6>
       <h2>Lectures & workshops</h2>
     </div>
-    <ul class="events-list">
-      <li class="events-list__item">
-        <div class="events-list__date">
-          <span class="date"> 05 </span>
-          <div class="events-list__box">
-            <h5 class="events-list__mounth">August</h5>
-            <p class="events-list__time">11:00 – 14:00</p>
-          </div>
-        </div>
-        <div class="events-list__info">
-          <h5 class="events-list__title">
-            Formation of the organizational structure of the company in the face
-            of uncertainty.
-          </h5>
-          <p class="events-list__text">
-            Formation of the organizational structure of the company in the face
-            of uncertainty.
-          </p>
-        </div>
-      </li>
-    </ul>
+    <app-events-list [events]="events" [quantityCards]="3"></app-events-list>
 
     <div class="events-section__cta">
         <h3>
             Do you want more?
         </h3>
-        <app-button-component variant="outline" routerLink="" text="" ></app-button-component>
+        <app-button-component variant="primary" [routerLink]="buttonLink" [text]="buttonText" ></app-button-component>
     </div>
   </div>
 </section>

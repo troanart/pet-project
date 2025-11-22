@@ -1,19 +1,20 @@
+<!-- htmlhint doctype-first:false, attr-lowercase:false -->
+
 <li class="events-list__item">
-        <div class="events-list__date">
-          <span class="date"> 05 </span>
-          <div class="events-list__box">
-            <h5 class="events-list__mounth">August</h5>
-            <p class="events-list__time">11:00 – 14:00</p>
-          </div>
-        </div>
-        <div class="events-list__info">
-          <h5 class="events-list__title">
-            Formation of the organizational structure of the company in the face
-            of uncertainty.
-          </h5>
-          <p class="events-list__text">
-            Formation of the organizational structure of the company in the face
-            of uncertainty.
-          </p>
-        </div>
+  <div class="events-list__date">
+    <span class="date">{{ eventCard.date | date:'dd' }}</span>
+    <div class="events-list__box">
+      <h5 class="events-list__mounth">{{ eventCard.date | date:'MMMM' }}</h5>
+      <p class="events-list__time">{{ eventCard.date | date:'HH:mm' }} – {{ eventCard.endTime | date:'HH:mm' }}</p>
+    </div>
+  </div>
+  <div class="events-list__info">
+    <h5 class="events-list__title">{{ eventCard.title }}</h5>
+    <p class="events-list__text">{{ eventCard.text }}</p>
+  </div>
+  <app-button-component 
+    [routerLink]="buttonRouterLink" 
+    [text]="buttonText" 
+    [variant]="'outline'">
+  </app-button-component>
 </li>

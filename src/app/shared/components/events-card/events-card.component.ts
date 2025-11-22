@@ -7,14 +7,11 @@ import { EventCard } from '../../models/event-card.interface';
   styleUrls: ['./events-card.component.scss'],
 })
 export class EventsCardComponent {
-  @Input() eventCard: EventCard = {
-    id: 0,
-    date: 0,
-    title: '',
-    mounth: '',
-    text: '',
-    time: '',
-    category: '',
- 
-  };
+  @Input() eventCard!: EventCard;
+
+  buttonText: string = 'View more';
+
+  get buttonRouterLink(): string {
+    return `/events/${this.eventCard.routerLink}`;
+  }
 }
