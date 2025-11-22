@@ -40,7 +40,7 @@ export class EventsService {
     const currentYear = year || new Date().getFullYear();
 
     // Маппинг названий месяцев на индексы (0-11)
-    const monthMap: { [key: string]: number } = {
+    const monthMap: { [key: string]: number } = { // !!! Заюзай здесь Enum от тайп скрипта. чтобы получить его значения в дальнейшем, нужна будет такая форма записи: Months[monthName as keyof typeof Months] Months - это название энама
       January: 0,
       February: 1,
       March: 2,

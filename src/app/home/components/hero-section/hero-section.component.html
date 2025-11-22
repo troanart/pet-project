@@ -17,7 +17,7 @@
         <h1 class="hero__title">Enjoy studying with Createx Online Courses</h1>
         <div class="hero__buttons">
             <app-button-component [routerLink]="aboutButtonRouterLink" [text]="aboutButtonText" [variant]="'outline'"></app-button-component>
-          <app-button-component [routerLink]="coursesButtonRouterLink" [text]="coursesButtonText" [variant]="'primary'"></app-button-component>
+          <app-button-component [routerLink]="coursesButtonRouterLink" [text]="coursesButtonText" [variant]="'primary'"></app-button-component> <!-- [variant] по умолчанию primary. Можно не указывать -->
         </div>
       </div>
       <div class="hero__img-box">
@@ -36,8 +36,8 @@
         </li>
         <li class="divider"></li>
         </ng-container>
-        
-      
+
+
       </ul>
 
   </div>

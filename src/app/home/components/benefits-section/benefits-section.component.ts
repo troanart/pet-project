@@ -74,9 +74,9 @@ export class BenefitsSectionComponent {
     },
   ];
 
-  activeIndex: number = 0;
-  
-  setActive(index: number): void {
+  activeIndex: number = 0; // !!! старайся определеять переменные с данными над методами и хуками: переменные -> constructor -> хуки (за исключением onDestroy, он в конце) -> методы (в самом конце утилитарные методы)
+
+  setActive(index: number): void { // !!! можно удалить
     this.activeIndex = index;
   }
 }

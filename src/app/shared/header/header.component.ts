@@ -33,7 +33,7 @@ export class HeaderComponent {
     }
   ];
 
-  @HostListener('window:scroll') 
+  @HostListener('window:scroll')
   onScroll() {
     this.isSolidBackground = window.scrollY > 50;
   }

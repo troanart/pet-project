@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero-section.component.scss'],
 })
 export class HeroSectionComponent {
-  aboutButtonRouterLink: string = '/about-us';
-  aboutButtonText: string = 'About us';
-  coursesButtonRouterLink: string = '/courses';
-  coursesButtonText: string = 'Explore courses';
+  aboutButtonRouterLink: string = '/about-us';  // статические даные. см. events-card.component строка 15
+  aboutButtonText: string = 'About us';  // статические даные. см. events-card.component строка 15
+  coursesButtonRouterLink: string = '/courses';  // статические даные. см. events-card.component строка 15
+  coursesButtonText: string = 'Explore courses';  // статические даные. см. events-card.component строка 15
 
   statsList = [
     {

@@ -16,6 +16,6 @@ export class EventsSectionComponent implements OnInit {
     this.events = this.eventsService.getEvents();
   }
 
-  buttonText: string = 'Explore all events';
-  buttonLink: string = '/events'
+  buttonText: string = 'Explore all events';  // статические даные. см. events-card.component строка 15
+  buttonLink: string = '/events'  // статические даные. см. events-card.component строка 15
 }

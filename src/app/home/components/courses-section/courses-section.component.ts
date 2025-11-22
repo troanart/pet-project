@@ -11,18 +11,18 @@ import { CoursesService } from 'src/app/shared/services/courses.service';
 export class CoursesSectionComponent implements OnInit {
   courses: CourseCard[] = [];
   constructor(private coursesService: CoursesService) {
-   
+
   }
-  
+
   ngOnInit(): void {
       this.courses = this.coursesService.getCourses();
   }
 
 
-  coursesButtonRouterLink: string = '/courses';
-  coursesButtonText: string = 'View all courses';
+  coursesButtonRouterLink: string = '/courses'; // статические даные. см. events-card.component строка 15
+  coursesButtonText: string = 'View all courses'; // статические даные. см. events-card.component строка 15
 
 
 
-  
+
 }

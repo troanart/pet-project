@@ -1,6 +1,6 @@
 <section class="benefits-section">
     <div class="benefits__container container">
-        <div class="benefits-section__title"> 
+        <div class="benefits-section__title">
             <h6>
                 Our benefits
             </h6>
@@ -10,10 +10,11 @@
         </div>
         <div class="benefits-section__inner">
             <ul class="benefits-list">
-                <li 
-                    class="benefits-list__item" 
-                    *ngFor="let item of benefitsList; let i = index" 
-                    (click)="setActive(i)" 
+              <!-- Можно не создавать промежуточный метод для такой простой логики (click)="activeIndex = i" -->
+                <li
+                    class="benefits-list__item"
+                    *ngFor="let item of benefitsList; let i = index"
+                    (click)="setActive(i)"
                     [class.active]="activeIndex === i"
                 >
                     <div class="benefits-list__icon" [innerHTML]="sanitizeHtml(item.icon)"></div>
@@ -31,11 +32,11 @@
                         {{benefitsContent[activeIndex].text}}
                     </p>
                 </div>
-                <img 
+                <img
                     *ngIf="benefitsContent[activeIndex]"
-                    [src]="benefitsContent[activeIndex].img_src" 
-                    width="500" 
-                    height="440" 
+                    [src]="benefitsContent[activeIndex].img_src"
+                    width="500"
+                    height="440"
                     [alt]="benefitsContent[activeIndex].img_alt"
                 >
             </div>

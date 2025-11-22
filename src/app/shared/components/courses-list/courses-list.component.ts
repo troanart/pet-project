@@ -11,11 +11,11 @@ export class CoursesListComponent {
   @Input() columns: 2 | 3 = 2;
   @Input() quantityCards: number = 0;
 
-  get gridTemplateColumns(): string {
+  get gridTemplateColumns(): string { // !!! смотри event-card.component, строка 17
     return `repeat(${this.columns}, 1fr)`;
   }
 
-  get coursesToShow(): CourseCard[]  {
+  get coursesToShow(): CourseCard[]  { // !!! смотри event-card.component, строка 17
     return this.courses.slice(0, this.quantityCards);
   }
 }

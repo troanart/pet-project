@@ -7,16 +7,16 @@
     <nav class="nav">
       <ul class="nav-list" >
         <li class="nav-list__item" *ngFor="let item of navigationItems">
-          <a [routerLink]="item.routerLink" class="nav-list__link" [attr.aria-label]="item.label"> {{ item.label }} </a> 
+          <a [routerLink]="item.routerLink" class="nav-list__link" [attr.aria-label]="item.label"> {{ item.label }} </a>
         </li>
-       
+
       </ul>
     </nav>
     <div class="header__box">
-       
 
-      <app-button-component [routerLink]="buttonRouterLink" [text]="buttonText" [variant]="'primary'"></app-button-component>
-      <a routerLink="/login" class="header__set-up" aria-label="Log in / Register"> 
+
+      <app-button-component [routerLink]="buttonRouterLink" [text]="buttonText" [variant]="'primary'"></app-button-component> <!-- [variant] по умолчанию primary. Можно не указывать -->
+      <a routerLink="/login" class="header__set-up" aria-label="Log in / Register">
         <svg
           width="20"
           height="20"

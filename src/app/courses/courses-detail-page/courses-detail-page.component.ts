@@ -15,8 +15,9 @@ export class CoursesDetailPageComponent implements OnInit {
     private route: ActivatedRoute,
     private coursesService: CoursesService
   ) { }
-  
+
   ngOnInit() {
+    // !!! Вынеси логику ниже в отдельный метод и вызови здесь
     const slug = this.route.snapshot.paramMap.get('slug');
     if (slug) {
       this.course = this.coursesService.getCourseBySlug(slug);
